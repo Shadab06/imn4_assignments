@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+* {
+  background-color: #ebf0ec;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* App header in Home.JS */
 .App-header {
-  background-color: #282c34;
+  background-color: #ebf0ec;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
+  justify-content: center;
+  text-align: left;
+  color: black;
+  font-family: 'Helvetica','sans-serif';
+}
+
+.App-header img {
+  margin-left: 80px;
+}
+
+.App-header h1 {
+  font-weight: bold;
+  font-size: 100px;
+}
+
+.App-header h3 {
+  font-weight: bold;
+}
+
+.App-header p {
+  font-size: 20px;
+  margin-right: 100px;
+}
+
+/* Content on Home.JS */
+ .mainpage {
+   margin-top: 40px;
+ }
+
+ /* Applied to all buttons on Home.JS */
+.main-button {
+  border: none;
   color: white;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 17px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border-color: black;
+  color: black;
+  margin-right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Only for Resume Button */
+.resume-btn {
+  background-color: #eba834;
+  transition: background-color 0.5s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Resume Button when hovered  */
+.resume-btn:hover {
+  background-color: #facc7d;
+}
+
+/* Only for Projects Button */
+.project-btn {
+  background-color: #ed4c4c;
+  transition: background-color 0.5s ease;
+}
+
+/* Projects Button when hovered */
+.project-btn:hover {
+  background-color: #f79797;
+}
+
+/* Only for Contact Button on home.js*/
+.contact-btn {
+  background-color: #72dbdb;
+  transition: background-color 0.5s ease;
+}
+
+/* Contact Button when hovered */
+.contact-btn:hover {
+  background-color: #bbf0f0;
+}
+
+/* Projects Page */
+.Projects h1 {
+  margin-top: 150px;
+  margin-left: 250px;
+  margin-bottom: 50px;
+}
+
+/* Applied to the rows on the Projects Page */
+.proj-row {
+  margin-left: 250px;
+}
+
+.proj-row p {
+  font-size: 20px;
+  margin-bottom: 50px;
+  margin-right: 80px;
+}
+
+.proj-row img {
+  height: auto;
+  width: 500px;
+  margin-bottom: 70px;
+  margin-right: 100px;
 }
