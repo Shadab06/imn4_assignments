@@ -37,16 +37,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
-//
 
-// <div className="col d-flex justify-content-end p-0 ">
-// <div className="roundedCircle1" ></div>
-//  </div>
-//         <div className="col-sm-7 p-0 d-flex justify-content-start ">
-//        <NavLink to='/' className="noTextDecorationOnly">
-//         <h4 className="my-2">Innovative Minds</h4> </NavLink>
-//           <h4
-//             className="mx-3 my-2 font-weight-light">
-//             Editor
-//           </h4>
-//         </div>
