@@ -13,7 +13,6 @@ const Navbar = () => {
             <NavLink to="/" className="noTextDecorationOnly">
               <h4 className="d-inline">Innovative Minds</h4>
             </NavLink>
-            <h4 className="d-inline font-weight-light mx-1">Editor</h4>
           </div>
         </div>
         <div className="col-4 gy-2">
@@ -37,4 +36,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
