@@ -36,4 +36,4 @@ class Footer extends Component {
 }
 
 export default Footer;
-// <i class="fab fa-linkedin-in"></i>
+
