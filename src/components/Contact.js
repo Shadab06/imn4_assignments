@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../App.css";
 import { send } from "emailjs-com";
-import Footer from "./Footer";
+
 const Contact = () => {
   const [userDetails, setDetails] = useState({
     firstName: "",
