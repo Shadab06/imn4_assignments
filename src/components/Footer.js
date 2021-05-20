@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 class Footer extends Component {
   render() {
     return (
@@ -19,7 +19,12 @@ class Footer extends Component {
             </div>
             <div className="col">
               <h4>Follow Me</h4>
-
+              <a href="https://www.linkedin.com/company/rehabilitation-society-of-visually-impaired/">
+                             <FontAwesomeIcon icon={faLinkedinIn} size="2x" className="" />
+                           </a>
+                           <a href="#twitterLink">
+                             <FontAwesomeIcon icon={faTwitter} size="2x" className="mx-2" />
+                           </a>
             </div>
             <div className="col">
               <p>
