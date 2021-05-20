@@ -1,32 +1,34 @@
-import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './components/Home.js';
-import Projects from './components/Projects.js';
-import Resume from './components/Resume.js';
-import Contact from './components/Contact.js';
+
+import "./App.css";
+import Contact from "./components/Contact";
+import Projects from "./components/Projects";
+import Resume from "./components/Resume";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div>
-      <Router>
+    <div className="App">
+      <BrowserRouter>
+        <Navbar />
         <Switch>
           <Route path="/" exact>
-            <Home />
+            Home Component
           </Route>
-
-          <Route path="/projects.js" exact>
-            <Projects />
-          </Route>
-
-          <Route path="/resume.js" exact>
-            <Resume />
-          </Route>
-
-          <Route path="/contact.js" exact>
+          <Route path="/contact">
             <Contact />
           </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/resume">
+            <Resume />
+          </Route>
         </Switch>
-      </Router>
+      </BrowserRouter>
+      <Footer />
     </div>
   );
 };
