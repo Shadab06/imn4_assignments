@@ -192,11 +192,7 @@ button:hover {
   color: black;
 }
 
-<<<<<<< Updated upstream
-/*********************** Code for the Resume part ***********************/
-=======
 /************** Code for the Resume part ************/
->>>>>>> Stashed changes
 
 .resume {
   font-family: 'Open Sans', sans-serif;
@@ -271,8 +267,4 @@ hr {
   max-width: 350px;
   margin-top: -2%;
   margin-bottom: 100px;
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
