@@ -2,6 +2,25 @@ import React from "react";
 import "../App.css";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
+
+  const changeResumeColor = () => {
+    document.getElementById('resume').style.color = 'blue';
+    document.getElementById('projects').style.color = 'grey';
+    document.getElementById('contact').style.color = 'grey';
+  }
+
+  const changeProjectColor = () => {
+    document.getElementById('resume').style.color = 'grey';
+    document.getElementById('projects').style.color = 'blue';
+    document.getElementById('contact').style.color = 'grey';
+  }
+
+  const changeContactColor = () => {
+    document.getElementById('resume').style.color = 'grey';
+    document.getElementById('projects').style.color = 'grey';
+    document.getElementById('contact').style.color = 'blue';
+  }
+
   return (
     <div>
       <div className="row mx-0 my-0 ">
@@ -15,18 +34,20 @@ const Navbar = () => {
             </NavLink>
           </div>
         </div>
-        <div className="col-4 gy-2">
+        <div className="links col-3 gy-1">
           <NavLink
             to="/resume"
+            id="resume"
             className="noTextDecoration "
             activeClassName="active"
+            onClick={changeResumeColor}
           >
             Resume
           </NavLink>
-          <NavLink to="/projects" className="noTextDecoration">
+          <NavLink to="/projects" id="projects" className="noTextDecoration" onClick={changeProjectColor}>
             Projects
           </NavLink>
-          <NavLink to="/contact" className="noTextDecoration">
+          <NavLink to="/contact" id="contact" className="noTextDecoration" onClick={changeContactColor}>
             Contact
           </NavLink>
         </div>
